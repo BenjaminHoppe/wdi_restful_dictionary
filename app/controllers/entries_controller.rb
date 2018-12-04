@@ -10,6 +10,10 @@ class EntriesController < ApplicationController
     render :show
   end
 
+  def new
+
+  end
+
 
 
 
