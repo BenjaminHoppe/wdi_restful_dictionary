@@ -1,1 +1,4 @@
-<h6>Ugh, another place holder</h6>
+<h3>Edit a Word</h3>
+<%= render 'entries_form', entry: @entry  %>
+<%= link_to 'Back to all entries', '/entries' %>
+<p><%= link_to "delete", entry_path(@entry), method: :delete %></p>

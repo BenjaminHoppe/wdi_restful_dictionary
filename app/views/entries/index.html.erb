@@ -1,1 +1,14 @@
-<p>Hello, world</p>
+<h2>Collection of Words:</h2>
+<%= link_to("New Word", "/entries/new") %>
+
+<% @entries.each do |entry| %>
+<p>
+  Word: <%= entry.word %>
+</p>
+<p>
+  <%= link_to 'Show More', entry_path(entry.id) %>
+</p>
+<p>
+  <%= link_to 'Edit', edit_entry_path(entry.id) %>
+</p>
+<% end %>
